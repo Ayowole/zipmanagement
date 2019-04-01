@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zip Manager</title>
+	<link rel="stylesheet" 
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		  crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+	  <div class="row mb-1">
+		  <div class="col margin-bottom">
+		  	<h1 class="text-center">Address</h1>
+		  </div>	  
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>zipcode:</label>
+		  </div>
+		  <div class="col">
+		  	<input name="zipcode" id="zipcode" onblur="searchzip(this.value)">		  
+		  </div>	  
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>street:</label>
+		  </div>	  
+		  <div class="col">
+		  	<input name="street" id="street">		  
+		  </div>
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>street-complement:</label>
+		  </div>
+		  <div class="col">
+		  	<input name="street_complement" id=street_complement>
+		  </div>
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>district:</label>
+		  </div>	
+		  <div class="col">
+		  	<input name="district" id="district">
+		  </div>  
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>city:</label>
+		  </div>
+		  <div class="col">
+		  	<input name="city" id="city">
+		  </div>	  
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>uf:</label>
+		  </div>
+		  <div class="col">
+		  	<input name="uf" id="uf"> <!-- Brazil specific code -->
+		  </div>	  
+	  </div>
+	  <div class="row mb-1">
+		  <div class="col-2">
+		  	<label>ibge:</label>
+		  </div>
+		  <div class="col">
+		  	<input name="ibge" id="ibge"> <!-- Brazil specific code -->
+		  </div>	  
+	  </div>
+	</div>
+</body>
+
+<script src="./zipcode.js"></script>
+
+</html>
