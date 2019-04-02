@@ -9,12 +9,11 @@
 		  crossorigin="anonymous">
 </head>
 <body>
-	<div class="container">
-	  <div class="row mb-1">
-		  <div class="col margin-bottom">
-		  	<h1 class="text-center">Address</h1>
-		  </div>	  
-	  </div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+  		<a class="navbar-brand text-light" href="#">Address</a>
+  	</nav>
+  	
+	<div class="container mb-5 ">
 	  <div class="row mb-1">
 		  <div class="col-2">
 		  	<label>zipcode:</label>
@@ -28,15 +27,7 @@
 		  	<label>street:</label>
 		  </div>	  
 		  <div class="col">
-		  	<input name="street" id="street">		  
-		  </div>
-	  </div>
-	  <div class="row mb-1">
-		  <div class="col-2">
-		  	<label>street-complement:</label>
-		  </div>
-		  <div class="col">
-		  	<input name="street_complement" id=street_complement>
+		  	<input name="street" id="street" disabled>		  
 		  </div>
 	  </div>
 	  <div class="row mb-1">
@@ -44,7 +35,7 @@
 		  	<label>district:</label>
 		  </div>	
 		  <div class="col">
-		  	<input name="district" id="district">
+		  	<input name="district" id="district" disabled>
 		  </div>  
 	  </div>
 	  <div class="row mb-1">
@@ -52,7 +43,7 @@
 		  	<label>city:</label>
 		  </div>
 		  <div class="col">
-		  	<input name="city" id="city">
+		  	<input name="city" id="city" disabled>
 		  </div>	  
 	  </div>
 	  <div class="row mb-1">
@@ -60,7 +51,7 @@
 		  	<label>uf:</label>
 		  </div>
 		  <div class="col">
-		  	<input name="uf" id="uf"> <!-- Brazil specific code -->
+		  	<input name="uf" id="uf" disabled> <!-- Brazil specific code -->
 		  </div>	  
 	  </div>
 	  <div class="row mb-1">
@@ -68,12 +59,38 @@
 		  	<label>ibge:</label>
 		  </div>
 		  <div class="col">
-		  	<input name="ibge" id="ibge"> <!-- Brazil specific code -->
+		  	<input name="ibge" id="ibge" disabled> <!-- Brazil specific code -->
 		  </div>	  
+	  </div>
+	</div>
+	<div class="content mb-5">
+	  <div class="row justify-content-center">
+	  	<button type="button" class="btn btn-sm btn-outline-secondary mr-1" onclick="clean_form()">Clear</button>
+	  	<button type="button" class="btn btn-sm btn-outline-primary" 
+	  			data-toggle="modal" data-target=".bd-example-modal-sm">Submit</button>
 	  </div>
 	</div>
 </body>
 
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    	<div class="mt-5 mb-5 ml-5 mr-5">
+    		<p>GitHub do responsável pelo desenvolvimento: </p>
+    		<p><a href="https://github.com/Ayowole">Ayo</a></p>
+    	</div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+	<p class="text-center text-secondary">powered by Ayowole Agbedejobi</p>	
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="./zipcode.js"></script>
 
 </html>

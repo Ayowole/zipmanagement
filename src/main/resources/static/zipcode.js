@@ -1,4 +1,5 @@
-	function clean_form(elements) {
+	function clean_form() {
+			document.getElementById('zipcode').value=("");
             document.getElementById('street').value=("");
             document.getElementById('district').value=("");
             document.getElementById('city').value=("");
